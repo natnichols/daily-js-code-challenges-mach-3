@@ -86,7 +86,13 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
-
+function sumNumbers(arr) {
+  let sum = 0
+  arr.forEach(num => {
+    sum += num
+  })
+  return sum
+}
 
 
 
