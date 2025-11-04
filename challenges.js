@@ -152,9 +152,18 @@ computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
 
+// function computeRemainder(num1, num2) {
+//   let quotient = num1 / num2
+//   let quotientFloor = Math.floor(num1 / num2)
+//   let remainder = quotient - quotientFloor
+//   if (quotient !== quotientFloor ) {
+//     return remainder
+//   }
+// }
 
-
-
+const computeRemainder = (x, y) => {
+  return !y ? Infinity : x % y
+}
 
 /*-----------------------------------------------------------------------------
 Challenge: 06-range
