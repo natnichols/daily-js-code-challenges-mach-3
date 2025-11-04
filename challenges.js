@@ -117,7 +117,16 @@ addList(7,-12) //=> -5
 // Your solution for 04-addList here:
 
 
+// function addList(...nums) {
+//   let sum = 0
+//   nums.forEach(function(num) {
+//     sum += num
+//   })
+//   return sum
+// }
 
+// reduce method w/ arrow fxn
+const addList = (...nums) => nums.reduce((sum, num) => num + sum, 0)
 
 
 /*-----------------------------------------------------------------------------
